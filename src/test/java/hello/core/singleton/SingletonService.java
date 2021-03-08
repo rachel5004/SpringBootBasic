@@ -7,8 +7,13 @@ public class SingletonService {
         return instance;
     }
 
+    private SingletonService(){
+
+    }
+
     public static void main(String[] args) {
-        SingletonService singletonService = new SingletonService();
+        SingletonService singletonService1 = new SingletonService();
+        SingletonService singletonService2 = new SingletonService();
     }
 
 }
